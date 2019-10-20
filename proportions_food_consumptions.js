@@ -20,7 +20,7 @@ var title = {
     style: {
         fontWeight: 'bold'
     },
-    text: "Proportion of average food consumption in 5 locations"
+    text: "Which Region Contributed the Most in Average Sales of Those McDonald Products? "
 }
 
 

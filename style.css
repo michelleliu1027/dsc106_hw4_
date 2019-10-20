@@ -90,7 +90,7 @@ body {
     word-spacing: 2.5px;
     letter-spacing: 1px;
     font-family: Times;
-    font-size: 15px;
+    font-size: 16px;
     margin: 25;
     border-bottom-style: inset;
     border-color:  #666666;
@@ -101,10 +101,7 @@ body {
 
   }
   
-  .tryNew{
-    background: #292929;
-    color: white;
-  }
+  
   .contact {
     text-align: left;
     color: #292929;

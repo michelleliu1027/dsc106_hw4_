@@ -6,7 +6,7 @@ Highcharts.chart('ChartPlaceHolder_impossible', {
         style: {
             fontWeight: 'bold'
         },
-        text: 'Monthly Changes in McDonald sales after the introducing of Impossible Burger',
+        text: 'What Happened After the "Incursion" of Impossible Burgers? (Oct. 2018 - Sep. 2019)',
         
     },
     xAxis: {
@@ -18,7 +18,7 @@ Highcharts.chart('ChartPlaceHolder_impossible', {
     },
     yAxis: {
         title: {
-            text: 'changes in sales from last month'
+            text: 'Dollars'
         }
     },
     tooltip: {
@@ -29,13 +29,19 @@ Highcharts.chart('ChartPlaceHolder_impossible', {
         useHTML: true
     },
     plotOptions: {
+        series:{
+            // stacking:'normal',
+            dataLabels: {
+            enabled: true
+            }
+        },
         column: {
             pointPadding: 0.2,
             borderWidth: 0
         }
     },
     series: [{
-        name: 'NE_SUMMATION',
+        name: 'North East Monthly Changes',
         data: [Number.NaN,
             -399682.0,
             239502.0,
@@ -51,7 +57,7 @@ Highcharts.chart('ChartPlaceHolder_impossible', {
             -19491.0]
 
     }, {
-        name: 'SW_SUMMATION',
+        name: 'South West Monthly Changes',
         data: [Number.NaN,
             -421400.0,
             237405.0,
@@ -67,7 +73,7 @@ Highcharts.chart('ChartPlaceHolder_impossible', {
             29666.0]
 
     }, {
-        name: 'NW_SUMMATION',
+        name: 'North West Monthly Changes',
         data: [Number.NaN,
             -381968.0,
             127373.0,
@@ -83,7 +89,7 @@ Highcharts.chart('ChartPlaceHolder_impossible', {
             16453.0]
 
     },{
-        name: 'SE_SUMMATION',
+        name: 'South East Monthly Changes',
         data: [Number.NaN,
             -362667.0,
             153160.0,
@@ -99,7 +105,7 @@ Highcharts.chart('ChartPlaceHolder_impossible', {
             18403.0]
 
     },{
-        name: 'C_SUMMATION',
+        name: 'Central Monthly Changes',
         data: [Number.NaN,
             -307517.0,
             168060.0,

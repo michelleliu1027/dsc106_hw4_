@@ -1,17 +1,23 @@
 var series = [
     {
         name:"Hamburger",
-        data:[725474, 721367, 725219, 717869, 909605, 901832, 897282]
+        data:[181368.5,
+            180341.75,
+            181304.75,
+            179467.25,
+            181921.0,
+            180366.4,
+            179456.40000000002]
 
       },
       {
         name:"Chicken Fillet",
-        data:[308175, 302101, 305797, 303620, 379496, 369303, 384179]
+        data:[77043.75, 75525.25, 76449.25, 75905.0, 75899.2, 73860.59999999999, 76835.8]
 
       },
       {
         name:"Fish Fillet",
-        data:[179006, 176625, 184822, 193430, 263834, 200532, 201411]
+        data:[44751.5, 44156.25, 46205.5, 48357.5, 52766.8, 40106.4, 40282.200000000004]
       }
     
     
@@ -40,7 +46,7 @@ var title = {
     style: {
         fontWeight: 'bold'
     },
-    text: "Weekly total sales in Mcdonald products (Jan. 2016)",
+    text: "What is the Influence of Days on Sales of Individual Products on Jan. 2016",
     x: 30,
     y: 5
 }
@@ -53,14 +59,14 @@ var xAxis = {
     
 var yAxis = {
         title:{
-            text: "Number of Sales",
+            text: "Total Daily Sales of Different Products (Dollars)",
             fontWeight: 'bold'
                 },
         stackLabels: {
         //   enabled: true,
           style: {
               fontWeight: 'bold',
-              color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+              color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray',
           }
         }
       };
@@ -68,16 +74,16 @@ var yAxis = {
 
     
 
-var legend = {
-    align: 'middle',
-    x: 500,
-    verticalAlign: 'top',
-    y: 20,
-    floating: true,
-    borderColor: '#CCC',
-    borderWidth: 1,
-    shadow: false
-  };
+// var legend = {
+//     align: 'middle',
+//     x: 500,
+//     verticalAlign: 'top',
+//     y: 20,
+//     floating: true,
+//     borderColor: '#CCC',
+//     borderWidth: 1,
+//     shadow: false
+//   };
   
     
 
@@ -102,7 +108,6 @@ json.title = title;
 json.chart = chart;
 json.xAxis = xAxis;
 json.yAxis = yAxis;
-json.legend = legend;
 json.series = series;
 json.plotOptions = plotOptions;
 json.chart = chart;

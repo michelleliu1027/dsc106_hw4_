@@ -1,6 +1,6 @@
 var series = [
     {
-        name:"NE_TOTAL",
+        name:"North East Total Sales",
         data:[1920995,
             1959215,
             2027678,
@@ -49,7 +49,7 @@ var series = [
 
       },
       {
-        name:"SW_TOTAL",
+        name:"South West Total Sales",
         data:[1874274,
             1969544,
             2022124,
@@ -98,7 +98,7 @@ var series = [
 
       },
       {
-        name:"NW_TOTAL",
+        name:"North West Total Sales",
         data:[1871601,
             1960649,
             1939014,
@@ -146,7 +146,7 @@ var series = [
             2415468]
       },
       {
-        name:"SE_TOTAL",
+        name:"South East Total Sales",
         data:[1825056,
             1933574,
             1901402,
@@ -194,7 +194,7 @@ var series = [
             2367390]
       },
       {
-        name:"C_TOTAL",
+        name:"Central Total Sales",
         data:[1859053,
             1859777,
             1935039,
@@ -269,7 +269,7 @@ var title = {
     style: {
         fontWeight: 'bold'
     },
-    text: "Monthly Toptal Consumption Trends for NE, SW, NW, SE, C (Jan 2016 -- Sep 2019)",
+    text: "What is the Sales Trends on McDonald Products in Those 5 Regions? (Jan. 2016 -- Sep. 2019)",
     x: 30,
     y: 5
 }
@@ -288,7 +288,7 @@ var xAxis = {
     
 var yAxis = {
         title:{
-            text: "Number of Sales"
+            text: "Dollars"
         },
         stackLabels: {
         //   enabled: true,

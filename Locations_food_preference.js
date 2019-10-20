@@ -3,22 +3,25 @@ Highcharts.chart('ChartPlaceHolder_2', {
         type: 'column'
     },
     title: {
-        text: 'McDonald Food Preferences in Different Locations'
+        text: 'What is the Most Popular McDonald Products in Those 5 Regions? ',
+        style: {
+            fontWeight: 'bold'
+        }
     },
     xAxis: {
         categories: [
-            'NE',
-            'SW',
-            'NW',
-            'SE',
-            'C'
+            'North East',
+            'South West',
+            'North West',
+            'South East',
+            'Central'
         ],
         crosshair: true
     },
     yAxis: {
         min: 0,
         title: {
-            text: 'Number of consumptions'
+            text: 'Dollars'
         }
     },
     tooltip: {
@@ -29,21 +32,27 @@ Highcharts.chart('ChartPlaceHolder_2', {
         useHTML: true
     },
     plotOptions: {
+        series:{
+            // stacking:'normal',
+            dataLabels: {
+            enabled: true
+            }
+        },
         column: {
             pointPadding: 0.2,
             borderWidth: 0
         }
     },
     series: [{
-        name: 'HM',
+        name: 'Hamburger',
         data: [65362334, 64421707, 63572000, 62328614, 61582375]
 
     }, {
-        name: 'CF',
+        name: 'Chicken Fillet',
         data: [27233220,26815953, 26341429, 26039450, 25724566]
 
     }, {
-        name: 'FF',
+        name: 'Fish Fillet',
         data: [16345942, 16104137, 15821178, 15614539, 15540968]
 
     }]
