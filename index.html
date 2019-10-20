@@ -1,7 +1,286 @@
-<!DOCTYPE html>
 <html>
-    <body>
-        <h1>Hello World</h1>
-        <p>I'm hosted with GitHub Pages.</p>
-    </body>
+
+   <head>
+
+        <!-- <style>
+            table, th, td {
+                border: 2px solid black;
+                border-collapse: collapse;
+                
+            }
+            th {
+                text-align: center;
+            }
+            td {
+                text-align: center;
+            }
+
+        </style> -->
+
+      <meta charset="UTF-8">
+      <meta name="author" content="MichelleYijun LiuLiu">
+      <meta name="viewport" contetn="width=device-width, initial-scale=1.0">
+      <title>
+         Mcdonald Product Report
+      </title>
+      <link href="https://fonts.googleapis.com/css?family=Mukta Vaani" type="text/css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+
+
+   <body>
+      <div class="container">
+         <div class="jumbotran">
+
+
+
+<!-- ----------------------- HEADERS FOR WEB STARTS ----------------------- -->
+            <!-- title -->
+            <div class="row header">
+                        <img src="http://logok.org/wp-content/uploads/2014/06/McDonalds-logo.png" alt="Mcdlogo" width="200px" height="160px">
+                         <t>McDonald's Sales Report</t>
+            </div>
+<!-- ----------------------- HEADERS FOR WEB ENDS ----------------------- -->
+
+
+
+
+<!-- ----------------------- FIRST PART OF GRAPHONG STARTS (monthly data)----------------------- -->
+<!-- External Import begins-->
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<!-- External Import ends-->
+
+    <!-- connect to js file -->
+        <h4 class="subHeading">Monthly Data Analysis</h4>
+
+        <br>
+
+<!-- <div class="row" > -->
+        <!--first plots starts-->
+        <div id = 'ChartPlaceHolder'></div>
+        <!-- plot the Monthly sales trends for those 5 types food -->
+        <div class = "plots" >
+            <!-- Internal Import begins-->
+            <script src="Monthly_trends_food_total.js"></script>
+            <!-- Internal Import ends -->
+        </div>
+        <!--first plots ends -->
+
+        <br>
+        <br>
+
+        <!-- Add interpretations on the first plot above -->
+        <div class = "texts">
+                <p class="Interpretations">By looking at the line chart of monthly total sales of 
+                    those 5 products at the 5 locations you provided, what we find first is that, 
+                    in general, from 2016 to 2019, North East region is where our products are consumed 
+                    by customers the most while the Central region is where our products are least 
+                    consumed by customers. Therefore, in order to expand our profits, 
+                    we should devote our energies more into the North East region to win more favors 
+                    from them. 
+                    <br>
+                    <br> Also, one alerting thing from the above plot is that, 
+                    in all those locations, after October 2018 which is exactly the time 
+                    when Burger King introduced the Impossible Burger, the sales of our products 
+                    seems to decrease in an immediate speed but not lasting. 
+                    To justify this kind of view, let's see another graph.
+                    <br>
+                </p>
+            </div>
+
+
+
+
+
+
+        <!--second plot starts-->
+        <br>
+
+        <div id = 'ChartPlaceHolder_impossible'></div>
+        <!-- plot sales changes after burgerking's impossible burger -->
+            <div class = "plots" >
+               <!-- Internal Import begins-->
+               <script src="sales_changes_after_impossible.js"></script>
+               <!-- Internal Import ends -->
+            </div>
+        <!--second plots ends -->
+
+        <br>
+        <br>
+        <!-- Add interpretations on the second plot above -->
+        <div class = "texts">
+                <p class="Interpretations">The bar chart above indicates that after the 
+                    introduction of Impossible Burger from Burger King (Oct 2018), 
+                    the sales of McDonald in all 5 regions occurred a shocking decrement.
+                     However, such decrement did not last for a long time: 
+                     in the later months (Nov 2018 — Sep 2019), we can see that the sales 
+                     varied a little bit. Therefore, we can conclude that the influences
+                      brought by the Impossible Burger would, in fact, threatened the 
+                      profits of McDonald at the very start. However, such competition 
+                      will not cause McDonald always in an adversary position. 
+                      
+                    <br>
+                    <br> One lesson from those sales data is that, it would be good for 
+                    McDonald to come up with innovations to boost the sales from 
+                    customers when other competitors provide some new strategies in marketing. 
+                    But McDonald should also not be too panic since the negative effects 
+                    brought by competitors will not last for too long. The market will 
+                    finally balance the trends in customers about chasing for something 
+                    innovative. 
+                    <br>
+                    <br>
+                </p>
+            </div>
+
+
+        
+        <!--third plot starts-->
+        <div id = 'ChartPlaceHolder_pie'></div>
+            <div class = "plots">
+                <!-- Internal Import begins-->
+                <script src="proportions_food_consumptions.js"></script>
+                <!-- Internal Import ends -->
+             </div>
+        <!--second plot ends-->
+
+                     <!-- Add interpretations on the plot above -->
+        <div class = "texts">
+            <p class="Interpretations">By exploring the average sales from Jan 2016 to Sep 2019, 
+                we also find that North East Region contributed to our sales the most. 
+                But, overall, all 5 locations were almost the same in contributions 
+                to the sales of our products. So, we might put our energies the most 
+                in North East region but still pay attentions to the remaining 4 
+                regions. 
+            </p>
+        </div>
+
+
+<!-- connect to js file -->
+<div id = 'ChartPlaceHolder_2'></div>
+
+
+<!--second plots starts-->
+<!-- plot the total food consumptions for 5 locations-->
+        <div class = "plots">
+        <!-- Internal Import begins-->
+        <script src="Locations_food_preference.js"></script>
+        <!-- Internal Import ends -->
+        </div>
+<!--second plots ends -->
+
+
+<!-- Add interpretations on the plot above -->
+    <div class = "texts">
+        <p class="Interpretations">The bar chart shows that, 
+            in those 5 locations, all three products (Hambugers, 
+            Chicken Fillet, Fish Fillet) share the same favorite trends: 
+            <b>Hambugers are consumed the most, Chicken Fillet the second 
+            and Fish Fillet the last.</b> Therefore, I suggest McDonald to 
+            invest more on hamburgers since this is the product being 
+            loved most by customers. 
+
+            <br><br>Also, those data told us that in North East region, 
+            all those 3 products are being consumed the most. 
+            Therefore, in a quick summary, 
+            we should treat North East as the target market for our 
+            business. 
+            But, since the consumption behaviors are similar in those 5 regions, 
+            we could generalize the strategies we will implemented in North East 
+            region to the other 4 regions.
+        </p>
+    </div>
+<!-- ----------------------- FIRST PART OF GRAPHONG ENDS (monthly data) ----------------------- -->
+
+
+
+
+
+
+<!-- ----------------------- Second PART OF GRAPHONG STARS ----------------------- -->
+
+<h4 class="subHeading">Jan. 2016 Weekly sales Analysis</h4>
+
+<!--Fourth plot starts-->
+    <div id = 'ChartPlaceHolder_weekly'></div>
+
+<!-- plot sales changes after burgerking's impossible burger -->
+    <div class = "plots" >
+       <!-- Internal Import begins-->
+       <script src="weekly_sales_total_amount.js"></script>
+       <!-- Internal Import ends -->
+    </div>
+<!--Fourth plots ends -->
+
+<!-- Add interpretations on the plot above -->
+    <div class = "texts">
+        <p class="Interpretations">The bar chart shows that, 
+            in those 5 locations, all three products (Hambugers, 
+            Chicken Fillet, Fish Fillet) share the same favorite trends: 
+            <b>Hambugers are consumed the most, Chicken Fillet the second 
+            and Fish Fillet the last.</b> Therefore, I suggest McDonald to 
+            invest more on hamburgers since this is the product being 
+            loved most by customers. 
+
+            <br><br>Also, those data told us that in North East region, 
+            all those 3 products are being consumed the most. 
+            Therefore, in a quick summary, 
+            we should treat North East as the target market for our 
+            business. 
+            But, since the consumption behaviors are similar in those 5 regions, 
+            we could generalize the strategies we will implemented in North East 
+            region to the other 4 regions.
+        </p>
+    </div>
+
+
+<!--Fifth plot starts-->
+    <div id = 'ChartPlaceHolder_weekly_foods'></div>
+<!-- plot sales changes after burgerking's impossible burger -->
+    <div class = "plots" >
+       <!-- Internal Import begins-->
+       <script src="wk_sales_food_types.js"></script>
+       <!-- Internal Import ends -->
+    </div>
+<!--Fifth plots ends -->
+
+
+<!-- Add interpretations on the plot above -->
+    <div class = "texts">
+        <p class="Interpretations">The bar chart shows that, 
+            in those 5 locations, all three products (Hambugers, 
+            Chicken Fillet, Fish Fillet) share the same favorite trends: 
+            <b>Hambugers are consumed the most, Chicken Fillet the second 
+            and Fish Fillet the last.</b> Therefore, I suggest McDonald to 
+            invest more on hamburgers since this is the product being 
+            loved most by customers. 
+
+            <br><br>Also, those data told us that in North East region, 
+            all those 3 products are being consumed the most. 
+            Therefore, in a quick summary, 
+            we should treat North East as the target market for our 
+            business. 
+            But, since the consumption behaviors are similar in those 5 regions, 
+            we could generalize the strategies we will implemented in North East 
+            region to the other 4 regions.
+        </p>
+    </div>
+<!-- </div> -->
+
+
+
+
+
+
+
+
+
+
+<!-- ----------------------- THIRD PART OF GRAPHONG ENDS ----------------------- -->
+
+         <p class="contact">NOTES: Any issues with this report, please contact michelleliu1027@gmail.com
+                <a href="#"> <img class="lovingIt" src="https://www.mcdonalds.com/content/dam/usa/nfl/assets/nav/arches-logo_108x108.jpg" alt="I'm loving it" ></a>
+        </p>
+      </div>
+      </div>
+   </body>
 </html>
