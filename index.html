@@ -1,324 +1,109 @@
 <html>
+    <head>
 
-   <head>
-
-        <!-- <style>
-            table, th, td {
-                border: 2px solid black;
-                border-collapse: collapse;
-                
-            }
-            th {
-                text-align: center;
-            }
-            td {
-                text-align: center;
-            }
-
-        </style> -->
-
-      <meta charset="UTF-8">
-      <meta name="author" content="MichelleYijun LiuLiu">
-      <meta name="viewport" contetn="width=device-width, initial-scale=1.0">
-      <title>
-         Mcdonald Product Report
-      </title>
-      <link href="https://fonts.googleapis.com/css?family=Mukta Vaani" type="text/css" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="style.css">
-   </head>
+            <meta charset="UTF-8">
+            <meta name="author" content="MichelleYijun LiuLiu">
+            <!-- <meta name="viewport" contetn="width=device-width, initial-scale=1.0"> -->
+            <title>
+                Finn Wolfhard's data presentation!
+            </title>
+            <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
 
 
-   <body>
-      <div class="container">
-         <div class="jumbotran">
+    <body>
+        <!-- <script src="https://code.highcharts.com/highcharts.js"></script> -->
+        <script src="./assets/highcharts.js"></script>
+        <script src="./assets/highchartsTimeline.js"></script>
+        <script src="./assets/data.js"></script>
+
+        <script src="./assets/highchartsmore.js"></script>
+        <script src="./assets/exportingmodel.js"></script>
+        <script src="./assets/exportingdata.js"></script>
+
+        <script src="./assets/networkingmodel.js"></script>
 
 
 
-<!-- ----------------------- HEADERS FOR WEB STARTS ----------------------- -->
-            <!-- title -->
-            <div class="row header">
-                        <img src="http://logok.org/wp-content/uploads/2014/06/McDonalds-logo.png" alt="Mcdlogo" width="200px" height="160px">
-                         <t>McDonald's Sales Report</t>
-            </div>
-<!-- ----------------------- HEADERS FOR WEB ENDS ----------------------- -->
+        <table id = "headPicText">
+                <tr>
+                  <td width="100%">
+                     <p>
+                         <img id = "simpson" src = "/assets/MV5BYjM2NmFiNGYtODQ1OC00ZTE5LTg4ZWYtYjFmODk4YmUyZDMzXkEyXkFqcGdeQXVyNjQ3NDAwOTA@._V1_UY317_CR20,0,214,317_AL_.jpg" style="min-width: 40px; max-width: 40px; height: 50px">
+                     </p>
+                </td>
+                </tr>
+        </table>
 
+        <table  width="100%"> 
+            <tr>
+                <td width="100%" rowspan="1">
+                    <div id="container">
+                        <script src = "timeline.js"></script>
+                    </div>
+                </td>
 
+            </tr>
 
+        </table>
 
-<!-- ----------------------- FIRST PART OF GRAPHONG STARTS (monthly data)----------------------- -->
-<!-- External Import begins-->
-<script src="./highchart.js"></script>
-<!-- External Import ends-->
-
-    <!-- connect to js file -->
-        <h4 class="subHeading">Monthly Data Analysis</h4>
-
-        <br>
-
-<!-- <div class="row" > -->
-        <!--first plots starts-->
-        <div id = 'ChartPlaceHolder'></div>
-        <!-- plot the Monthly sales trends for those 5 types food -->
-        <div class = "plots" >
-            <!-- Internal Import begins-->
-            <script src="./javascript/Monthly_trends_food_total.js"></script>
-            <!-- Internal Import ends -->
-        </div>
-        <!--first plots ends -->
-
-
-        <!-- Add interpretations on the first plot above -->
         <div class = "texts">
-                <p class="Interpretations">By looking at the line chart of monthly total sales of 
-                    those 3 products at the 5 locations you provided, what we find first is that, 
-                    in general, from 2016 to 2019, North East region is where our products are consumed 
-                    by customers the most while the Central region is where our products are least 
-                    consumed by customers. Therefore, in order to expand our profits, 
-                    we should devote our energies more into the North East region to win more favors 
-                    from them. 
+                <p class="Interpretations">
+                    Note:
                     <br>
-                    <br> Also, one alerting thing from the above plot is that, 
-                    in all those locations, after <b>October 2018</b> which is exactly the time 
-                    when Burger King introduced the Impossible Burger, the sales of our products 
-                    seems to decrease in an immediate speed but not lasting. 
-                    To justify this kind of view, let's see another graph.
-                    <br>
-                    <br>
+                        1. From year 2003-2019, the number of shows Finn Wolfhard attended gradually increased;
+                        <br>
+                        2. At the year when Stranger Things released (2016), the average rating of Finn Wolfhard’s shows increase to 8.2 / 10. Therefore, we could see Stranger Things boost Finn into a more popular level;
+                </p>
+            </div>
+
+        <table align = center>
+            <tr>
+                <td align = center>
+                        <button id = female onclick="female_click()" ><t style="color: brown"> <b>female</b> </t>
+                        </button> 
+                        <button id = male onclick="male_click()"> <t style="color: brown;"> <b>male</b></t></button>  
+                        <div id="radar_male" style="min-width: 500px; max-width: 700px; height: 500px; margin: 0 auto; display: none;">
+                                <script src = "radar.js"></script>
+                            </div>
+                    
+                            <div id = "radar_female" style="min-width: 500px; max-width: 700px; height: 500px; margin: 0 auto; display: block;">
+                                <script src = "radar.js"></script>
+                            </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class = "texts">
+                <p class="Interpretations" >
+                        Note:
+                        <br>
+                        1. In general, males tend to be more interested in Stranger Things; Especially for males aged 18-29, compared to females aged 18-29, they tend to be more interested in Stranger Things;<br>
+                        2. Both males and females aged 45+ and aged 18 are less likely to vote for Stranger Things;<br>
+                        3. Females aged 18-29 are more likely to vote for Stranger Things compared to other females;<br>
+                        4. Males aged 30-44 are more like likely to vote for Stranger Things than others;<br>
+                        5. Most males and females tend to Vote 10 for Stranger Things<br>
                 </p>
             </div>
 
 
+            <table id = 'network' align = center>
+                    <tr>
+                        <td align = center>
+                            <div id = 'network'>
+                                <script src = "network.js"></script>
+                            </div>
+                                
+                        </td>
+                    </tr>
+            </table>
 
-
-
-
-        <!--second plot starts-->
-        <br>
-
-        <div id = 'ChartPlaceHolder_impossible'></div>
-        <!-- plot sales changes after burgerking's impossible burger -->
-            <div class = "plots" >
-               <!-- Internal Import begins-->
-               <script src="./javascript/sales_changes_after_impossible.js"></script>
-               <!-- Internal Import ends -->
-            </div>
-        <!--second plots ends -->
-        <!-- Add interpretations on the second plot above -->
-        <div class = "texts">
-                <p class="Interpretations">The bar chart above indicates that after the 
-                    introduction of Impossible Burger from Burger King (Oct 2018), 
-                    the sales of McDonald in all 5 regions had a shocking decrement in that month.
-                     However, such decrement did not last for a long time: 
-                     in the later months (Nov 2018 — Sep 2019), we can see that the sales 
-                     varied a little bit. Therefore, we can conclude that the influences
-                      brought by the Impossible Burger would, in fact, threatened the 
-                      profits of McDonald at the very start. However, such competition 
-                      will not cause McDonald always in an adversary position. 
-                      
-                    <br>
-                    <br> One lesson from those sales data is that, it would be good for 
-                    McDonald to come up with innovations to boost the sales from 
-                    customers when other competitors provide some new strategies in marketing. 
-                    But McDonald should also not be too panic since the negative effects 
-                    brought by competitors will not last for too long. The market will 
-                    finally balance the trends on customers in chasing for something 
-                    innovative. 
-                    <br>
-                    <br>
-                </p>
-            </div>
-
-
-        
-        <!--third plot starts-->
-        <div id = 'ChartPlaceHolder_pie'></div>
-            <div class = "plots">
-                <!-- Internal Import begins-->
-                <script src="./javascript/proportions_food_consumptions.js"></script>
-                <!-- Internal Import ends -->
-             </div>
-        <!--second plot ends-->
-
-                     <!-- Add interpretations on the plot above -->
-        <div class = "texts">
-            <p class="Interpretations">After exploring the average sales contributions 
-                on McDonald Products from those 5 regions, we noticed that, overall, 
-                5 regions contributed almost the same but North East region contributed 
-                a little bit higher (20.6%) on average. Therefore, after seeing the 
-                proportions on sales contributions, we concluded that there’s no big 
-                necessary to treat those regions separately. 
-                But our target market should be put on North East region since they 
-                are slightly higher in average sales contributions. 
-
-                <br>
-                <br>In order to see what kind of products McDonald should invest more, 
-                or which products are popular in those 5 regions, let’s see the graph below.
-                <br>
-                <br>
-            </p>
+            <div class = "texts">
+                    <p class="Interpretations">Note:<br>
+                            The above network chart chooses 30 actors / actresses from Stranger Things and attempts to find the cooperation of shows between Finn Wolfhard and those actors / actresses. This network chart indicates that, among those actors / actresses, almost all of them only had <b>one</b> corporation with Finn Wolfhard, that is Stranger Things.
+                    </p>
         </div>
+    
 
-
-<!-- connect to js file -->
-<div id = 'ChartPlaceHolder_2'></div>
-
-
-<!--second plots starts-->
-<!-- plot the total food consumptions for 5 locations-->
-        <div class = "plots">
-        <!-- Internal Import begins-->
-        <script src="./javascript/Locations_food_preference.js"></script>
-        <!-- Internal Import ends -->
-        </div>
-<!--second plots ends -->
-
-
-<!-- Add interpretations on the plot above -->
-    <div class = "texts">
-        <p class="Interpretations"> <b>SURPRISE!</b> In all 5 regions, the sales 
-            in McDonald Products shared the same trends. In all 
-            5 regions, Hamburger is the most popular, Chicken Fillet 
-            the second, and Fish Fillet the last. Therefore, 
-            to expand market, McDonald can do some innovations on 
-            Hamburgers. Combining the conclusion we obtained from 
-            above plot — North East contributed the most to the sales, 
-            we suggest McDonald to do some innovation experiments on 
-            hamburgers in North East region, to see how customers will react. 
-            And since the preference on those 3 products is similar in 
-            those 5 regions, how customers acted in North East region 
-            will probably react the same in the remaining 4 regions.
-            <br>
-            <br>
-        </p>
-    </div>
-<!-- ----------------------- FIRST PART OF GRAPHONG ENDS (monthly data) ----------------------- -->
-
-<div class = "texts">
-        <p class="Interpretations"> Thus, as boss you can see, the monthly data 
-            from Jan. 2016 to Sep. 2019 helped us:
-                <br> <b>1)</b> realize that the Impossible Burger indeed threatened 
-                McDonald’s Products a lot in the month when it was introduced 
-                (Oct. 2018). However, such threat did not last for a long 
-                time and our almighty market helped us go back to the normal track
-                of sales; 
-                <br> <b>2)</b> North East is where we should put our focus more 
-                on since this region contributed the most to our sales.
-                 At the same time, the remaining 4 regions (South West, North West, 
-                 South East and Central regions) should not be ignored when 
-                 we consider expanding your market; 
-                <br><b>3)</b> Hamburger is the most popular product among the 5 
-                products you provided to us. Therefore, McDonald needs to 
-                come up with more ways in selling hamburgers. 
-                <br>
-                <br>To explore more on the micro, or daily trends in our sales of products, we switch to the daily dataset from Jan. 2016.             <br>
-            <br>
-        </p>
-    </div>
-
-
-
-
-
-<!-- ----------------------- Second PART OF GRAPHONG STARS ----------------------- -->
-
-<h4 class="subHeading">Jan. 2016 Weekly sales Analysis</h4>
-
-<!--Fourth plot starts-->
-    <div id = 'ChartPlaceHolder_weekly'></div>
-
-<!-- plot sales changes after burgerking's impossible burger -->
-    <div class = "plots" >
-       <!-- Internal Import begins-->
-       <script src="./javascript/weekly_sales_total_amount.js"></script>
-       <!-- Internal Import ends -->
-    </div>
-<!--Fourth plots ends -->
-
-<!-- Add interpretations on the plot above -->
-    <div class = "texts">
-        <p class="Interpretations">
-            Since in Jan. 2016, the number of 
-            days is different (Monday to Thursday occur 4 times, while Friday to Sunday occur 5 times). Therefore,
-            we decide to normalize the total sales of products for better comparison. 
-            <br>
-            <br>This stacked bar chart helps us understand that Friday is McDonald's <i>Lucky Day</i> in sales.
-            All 5 products were sold the most on Friday. 
-
-            <br>
-            <br> Also, this chart suggests us that in Jan.2016, from Monday to Thursday and Sunday, North East remained
-            as the biggest contributor for McDonald's products sales. However, one interesting finding is that, 
-            on Friday and Saturday, North East was not the first contributor for sales.
-
-            <br>
-            <br>Therefore, McDonald needs to consider strategies in selling products in different regions according to the 
-            days on a week. 
-            <br>
-            <br>
-        </p>
-    </div>
-
-
-<!--Fifth plot starts-->
-    <div id = 'ChartPlaceHolder_weekly_foods'></div>
-<!-- plot sales changes after burgerking's impossible burger -->
-    <div class = "plots" >
-       <!-- Internal Import begins-->
-       <script src="./javascript/wk_sales_food_types.js"></script>
-       <!-- Internal Import ends -->
-    </div>
-<!--Fifth plots ends -->
-
-
-<!-- Add interpretations on the plot above -->
-    <div class = "texts">
-        <p class="Interpretations">Next, we explore the above area plot to discover 
-            how days within a week will influence the sales of those 3 products. 
-            The first discovery is that Hamburger was the most popular product among the three (As the area in the graph shows)
-            Also, the graph matches what we found above -- Friday is the day when sales reached maximum;
-            <br>
-            <br> Another interesting finding on this plot is that 
-            after the increment on Friday, both Hamburger and Fish Fillet suffered a huge decrement on daily average
-            product sales while Chicken Fillet had a slight decrement on daily average product sales; After such decrements,
-            only Hamburger continued to decrease in sales while the other two started to increase their sales;
-            Thus, McDonald needs to be wary about the sales strategies on Fish Fillet and Hamburger since their changes in 
-            sales varied a lot. Also, pay special attention to Hamburger, even if it was the main contributer to McDonald's 
-            revenue, its sales are unstable since they had trend in decrements. 
-            <br>
-            <br>
-        
-        </p>
-    </div>
-<!-- </div> -->
-<div class = "texts">
-        <p class="Interpretations"> As a conclusion, as boss you can notice that, 
-            the daily sales information suggested us that: 
-                <br> <b>1) </b>McDonald could treat Fridays as a point when 
-                it could expand its market since the data suggests that the sales will 
-                maintain high at that day. 
-                <br> <b>2)</b> Even if Hamburgers are the most popular choice among 
-                customers, Hamburgers’ sales are elastic (as its changes in sales varied
-                 a lot in those days). Therefore, McDonald should be careful about it. 
-                <br> <b>3) </b> North East region is still McDonald’s target market.
-            <br>
-            <br>
-        </p>
-    </div>
-
-
-
-
-
-
-
-
-
-
-<!-- ----------------------- second PART OF GRAPHONG ENDS ----------------------- -->
-
-         <p class="contact">NOTES: Any issues with this report, please contact michelleliu1027@gmail.com
-                <a href="#"> <img class="lovingIt" src="https://www.mcdonalds.com/content/dam/usa/nfl/assets/nav/arches-logo_108x108.jpg" alt="I'm loving it" ></a>
-        </p>
-      </div>
-      </div>
-   </body>
+    </body>
 </html>
